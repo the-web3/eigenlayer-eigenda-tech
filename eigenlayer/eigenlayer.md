@@ -2,13 +2,13 @@
 
 # 一. EigenLayer 的代码架构
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYtp5-DbUAA5bgG.jpg)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtp5-DbUAA5bgG.jpg)
 
 # 二. EigenLayer 的功能模块
 
 ## 1.注册成为 Operator
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYtqeykaIAAM-Hi.png)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtqeykaIAAM-Hi.png)
 
 💡Operator 调用 registerAsOperator 的方法称为节点运营商
 💡💡将 operator 自己绑定成为了 staker
@@ -16,7 +16,7 @@
 
 ## 2.Staking 流程
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYtrAaHbQAAx4Hk.jpg)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtrAaHbQAAx4Hk.jpg)
 
 流程一： ETH 质押
 
@@ -34,11 +34,11 @@
 
 ## 3.Delegate 流程
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYtrIlKbAAAMmCb.jpg)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtrIlKbAAAMmCb.jpg)
 
 ## 4.排队取款
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYtrMpIaYAAJcwF.jpg)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtrMpIaYAAJcwF.jpg)
 
 
 
@@ -46,14 +46,14 @@
 
 ## 5.完成排队
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYtrQv9a8AAJbx0.jpg)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtrQv9a8AAJbx0.jpg)
   
 
 ## 6. Staker 从信标链（EigenLayer）
 
 
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYtrU2lbsAA_XKn.jpg)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtrU2lbsAA_XKn.jpg)
 
 
 
@@ -61,7 +61,7 @@
 
 ## 1.注册成为 Operator 源码解析
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYtrgwwaIAEXUpR.png)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtrgwwaIAEXUpR.png)
 
 ```
 function registerAsOperator(
@@ -209,7 +209,7 @@ function _increaseOperatorShares(address operator, address staker, IStrategy str
 
 ## 2.Strategies 管理流程源码解析
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYtsDSuacAA_7TL.jpg)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtsDSuacAA_7TL.jpg)
 
 ```
 function addStrategiesToDepositWhitelist(
@@ -269,7 +269,7 @@ function removeStrategiesFromDepositWhitelist(
 
 
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYtsQGTawAArbzn.png)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtsQGTawAArbzn.png)
 
 
 
@@ -411,7 +411,7 @@ function recordBeaconChainETHBalanceUpdate(
 
 
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYtsj7Jb0AEGPQr.png)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtsj7Jb0AEGPQr.png)
 
 
 
@@ -586,7 +586,7 @@ function _increaseOperatorShares(address operator, address staker, IStrategy str
 
 
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYts75gasAAQhT-.png)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYts75gasAAQhT-.png)
 
 
 
@@ -680,7 +680,7 @@ function _delegate(
 
 
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYttHqLbsAABLdg.png)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYttHqLbsAABLdg.png)
 
 
 
@@ -850,7 +850,7 @@ function _removeSharesAndQueueWithdrawal(
 
 
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYttdJEagAAx7-H.png)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYttdJEagAAx7-H.png)
 
 
 
@@ -976,7 +976,7 @@ function _completeQueuedWithdrawal(
 
 
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYttp2sbEAAbT3d.png)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYttp2sbEAAbT3d.png)
 
 
 
@@ -1069,7 +1069,7 @@ function _updateCheckpoint(Checkpoint memory checkpoint) internal {
 
 
 
-![](E:\the-web3\eigenlayer-eigenda-tech\eigenlayer\imgs\GYttp2sbEAAbT3d.png)
+![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtud0qbkAAaUit.png)
 
 
 
