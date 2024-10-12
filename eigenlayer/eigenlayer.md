@@ -10,9 +10,9 @@
 
 ![](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/imgs/GYtqeykaIAAM-Hi.png)
 
-💡Operator 调用 registerAsOperator 的方法称为节点运营商
-💡💡将 operator 自己绑定成为了 staker
-💡💡将 operator  自质押的份额 delegate 给自己
+- Operator 调用 registerAsOperator 的方法称为节点运营商
+  - 将 operator 自己绑定成为了 staker
+  - 将 operator  自质押的份额 delegate 给自己
 
 ## 2.Staking 流程
 
