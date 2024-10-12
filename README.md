@@ -9,8 +9,8 @@
 
 ### EigenLayer
 
-#### 1. 深入解析 EigenLayer 底层设计原理和源码- [教程]()
-#### 2. 深入解析 EigenLayer 的 Middleware 合约底层设计原理和源码- [教程]()
+#### 1. 深入解析 EigenLayer 底层设计原理和源码- [教程](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/eigenlayer.md)
+#### 2. 深入解析 EigenLayer 的 Middleware 合约底层设计原理和源码- [教程](https://github.com/the-web3/eigenlayer-eigenda-tech/blob/main/eigenlayer/middleware.md)
 
 ------------------------------------------------------------------------------------------------------------------------------
 
