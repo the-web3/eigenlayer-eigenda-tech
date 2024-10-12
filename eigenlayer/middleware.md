@@ -17,15 +17,26 @@ eigenlayer-contractsEigenLayer 是一组部署在以太坊上的智能合约，�
 
 
 
-💡**BLSApkRegistry** 💡💡**registerBLSPublicKey**: 注册一个BLS公钥，确保该公钥未被注册过。该函数通过验证签名（证明操作员拥有公钥的所有权）来防止伪造公钥注册。具体的验证过程涉及配对检查和gamma值的计算，以确保公钥和签名匹配。 💡💡**registerOperator**: 注册操作员的公钥到指定的仲裁组（quorum）。每个仲裁组的编号是一个8位的整数（byte）。该函数通过从操作员处获取其已注册的公钥并更新每个仲裁组的聚合公钥来完成注册。此函数仅限RegistryCoordinator调用。 💡💡**deregisterOperator**: 撤销操作员在指定仲裁组中的注册，将其公钥从这些仲裁组的聚合公钥中移除。
+- **BLSApkRegistry**
+  - **registerBLSPublicKey**: 注册一个BLS公钥，确保该公钥未被注册过。该函数通过验证签名（证明操作员拥有公钥的所有权）来防止伪造公钥注册。具体的验证过程涉及配对检查和gamma值的计算，以确保公钥和签名匹配。
+  - **registerOperator**: 注册操作员的公钥到指定的仲裁组（quorum）。每个仲裁组的编号是一个8位的整数（byte）。该函数通过从操作员处获取其已注册的公钥并更新每个仲裁组的聚合公钥来完成注册。此函数仅限RegistryCoordinator调用。
+  - **deregisterOperator**: 撤销操作员在指定仲裁组中的注册，将其公钥从这些仲裁组的聚合公钥中移除。
 
-💡**IndexRegistry** 💡💡**registerOperator** 函数用于将操作员注册到一个或多个指定的仲裁组中。该操作仅限于 RegistryCoordinator 执行。注册过程中，合约会验证仲裁组是否存在，并为该操作员分配一个新的操作员索引，维护操作员的历史记录，并返回每个仲裁组中操作员的数量。 💡💡**deregisterOperator** 函数用于从仲裁组中注销操作员，方法是将指定的操作员从其对应的操作员索引中移除，并将最后一个操作员填补空缺的位置，同时更新仲裁组的操作员数量。
+- **IndexRegistry** 
+  - **registerOperator** 函数用于将操作员注册到一个或多个指定的仲裁组中。该操作仅限于 RegistryCoordinator 执行。注册过程中，合约会验证仲裁组是否存在，并为该操作员分配一个新的操作员索引，维护操作员的历史记录，并返回每个仲裁组中操作员的数量。
+  - **deregisterOperator** 函数用于从仲裁组中注销操作员，方法是将指定的操作员从其对应的操作员索引中移除，并将最后一个操作员填补空缺的位置，同时更新仲裁组的操作员数量。
 
-💡**StakeRegistry** 💡💡**registerOperator** 函数允许将一个操作员注册到多个 quorum（投票组）中。在此过程中，合约会验证操作员的股份是否满足每个 quorum 的最小股份要求。如果满足要求，则更新该操作员在 quorum 中的股份并返回更新后的数据。 💡💡**deregisterOperator** 函数允许将操作员从指定的 quorum 中撤销。它会更新操作员在每个 quorum 中的股份，并对总股份进行相应的调整。
+- **StakeRegistry**  
+  - **registerOperator** 函数允许将一个操作员注册到多个 quorum（投票组）中。在此过程中，合约会验证操作员的股份是否满足每个 quorum 的最小股份要求。如果满足要求，则更新该操作员在 quorum 中的股份并返回更新后的数据。 
+  - **deregisterOperator** 函数允许将操作员从指定的 quorum 中撤销。它会更新操作员在每个 quorum 中的股份，并对总股份进行相应的调整。
 
-💡**ServiceManagerBase** 💡💡**registerOperatorToAVS**: 将操作员注册到 AVS 目录。只有 RegistryCoordinator 可以调用此函数。它将操作员地址和签名信息传递给 _avsDirectory 来进行注册 💡💡**deregisterOperatorFromAVS**: 将操作员从 AVS 目录中注销。仅允许 RegistryCoordinator 调用此函数。
+- **ServiceManagerBase**
+  - **registerOperatorToAVS**: 将操作员注册到 AVS 目录。只有 RegistryCoordinator 可以调用此函数。它将操作员地址和签名信息传递给 _avsDirectory 来进行注册 
+  - **deregisterOperatorFromAVS**: 将操作员从 AVS 目录中注销。仅允许 RegistryCoordinator 调用此函数。
 
-💡**RegistryCoordinator** 💡💡**blsApkRegistry.registerOperator、stakeRegistry.registerOperator 和 indexRegistry.registerOperator** 用于将操作员注册到多个注册表中。 💡💡**blsApkRegistry.deregisterOperator、stakeRegistry.deregisterOperator 和 indexRegistry.deregisterOperator** 用于从注册表中注销操作员。
+- **RegistryCoordinator**
+  - **blsApkRegistry.registerOperator、stakeRegistry.registerOperator 和 indexRegistry.registerOperator** 用于将操作员注册到多个注册表中。 
+  - **blsApkRegistry.deregisterOperator、stakeRegistry.deregisterOperator 和 indexRegistry.deregisterOperator** 用于从注册表中注销操作员。
 
 # 三. middleware 功能模块介绍
 
